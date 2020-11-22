@@ -1,4 +1,8 @@
 # Getting-and-Cleaning-Data
+
+# CodeBook.md 
+A code book that describes the variables, the data, and any transformations or work
+
 # run_analysis.R
 -->It is the main script of the repository. 
 
