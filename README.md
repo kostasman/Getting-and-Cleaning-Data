@@ -1,19 +1,17 @@
 # Getting-and-Cleaning-Data
-run_analysis.R
-It is the main script of the repository. As it is described in 'CodeBood.md':
+# run_analysis.R
+-->It is the main script of the repository. 
 
 In order to produce the 'tidy_data_summary' table, the script 'run_analysis.R' was created and used. It performs the following tasks:
 
 Merges the training and the test sets to create one data set with target variables.
-Binds these files,
-
+Binds these files:
 UCI HAR Dataset/train/subject_train.txt
 UCI HAR Dataset/train/X_train.txt
 UCI HAR Dataset/train/y_train.txt
 from the train set by columns to a table that contains, the human subject, the activity performed and the values of the features.
 
-Binds these files,
-
+Binds these files:
 UCI HAR Dataset/test/subject_test.txt
 UCI HAR Dataset/test/X_test.txt
 UCI HAR Dataset/test/y_test.txt
@@ -31,13 +29,7 @@ Corrects a typo that exists in some feature names, that is to replace 'BodyBody'
 Creates a new tidy dataset with the appropriate labels for the variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Group the tidy data table created in step 4, by 'subject' and 'activity'.
-
 Summarize each variable to find the average for the grouped values.
-
 Ungroup the data table.
-
 Add descriptive names to the variables of the new tidy data table, by adding the prefix 'Avrg-' in the names of the target feature averages.
-
-Write the data in a text file in the present working directory, by the command:
-
-write.table(tidy_data_summary, "tidy_data_summary.txt", row.names = FALSE) 
+Write the data in a text file in the present working directory, by the command: write.table(tidy_data_summary, "tidy_data_summary.txt", row.names = FALSE) 
